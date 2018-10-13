@@ -10,7 +10,7 @@ public class Tools extends Levels {
 	}
 	
 	void run(int l) {
-		int numLevels = 1;
+		int numLevels = 10;
 		if (l != 0) {
 			generate(l);
 		}
