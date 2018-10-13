@@ -38,7 +38,7 @@ Levels are generated in `Maze.java` and are ran in `Tools.java`. Levels are in `
 
 ## File Overview
 
-### Levels.java
+### Levels.java (extends Maze.java)
 
 This is the file where the code to run robot through the mazes is placed.
 
@@ -46,7 +46,7 @@ This is the file where the code to run robot through the mazes is placed.
 
 `anyLevel()`: Where you place code that can complete any maze.
 
-### Maze.java (extends Maze.java)
+### Maze.java
 
 The code that contains the levels, the robot library and other logic.
 
