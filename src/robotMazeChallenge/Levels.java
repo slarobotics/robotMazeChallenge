@@ -1,8 +1,5 @@
 /*
- * Todo: fix map showing when it shouldn't and not being able to be displayed
- * when displayMap(false)
- * 
- * Go through all the levels and time how long it takes me to complete them.
+ * Todo: Go through all the levels and time how long it takes me to complete them.
  * Find any other bugs that exist.
  */
 
@@ -18,34 +15,20 @@ public class Levels extends Maze {
 	
 	// Values
 	
-	// ultrasonic() => true, false
-	// lightSensor() => number >= 0
+	// ultrasonic() => number >= 0
+	// lightSensor() => true, false
 	
 	void levelOne() {
 		// To test set Tool.run to 1 in java
-		moveForward(9);
-		grabFlag();
+		
 	}
 	
 	void levelTwo() {
 		// To test set Tool.run to 2 in java
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		moveForward(1);
-		grabFlag();
 	}
 	
 	void levelThree() {
 		// To test set Tool.run to 3 in java
-		
-		moveForward(1);
-		moveForward(1);
 		
 	}
 	
@@ -88,6 +71,5 @@ public class Levels extends Maze {
 		// This is for bots that you believe are capable 
 		// enough to complete any level. To test set Tool.run 
 		// to 0 in java
-		
 	}
 }

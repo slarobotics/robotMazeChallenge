@@ -16,7 +16,7 @@ public class Tools extends Levels {
 		}
 		
 		if (l == 0) {
-			run(random(1, numLevels));
+			generate(random(1, numLevels));
 			
 			anyLevel();
 		} else if (l == 1) {

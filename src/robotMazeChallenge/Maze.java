@@ -10,6 +10,7 @@ public class Maze {
 	private String[] level = new String[12];
 	private String[] levelCopy = new String[12];
 	public boolean timer = false;
+	private boolean map = false;
 	private int currentMove = 0;
 	private int maxMoves = 0;
 	private int levelLength = 0;
@@ -20,7 +21,8 @@ public class Maze {
 	}
 	
 	void mapAllowed(boolean allowed) {
-		if (allowed) {
+		map = allowed;
+		if (!allowed) {
 			System.out.println("Map is not allowed.");
 		} else {
 			System.out.println("Map: " + String.join("", levelCopy));
@@ -143,7 +145,7 @@ public class Maze {
 			level[4] = "B";
 			level[5] = "O";
 			level[6] = "B";
-			level[7] = "B";
+			level[7] = "O";
 			level[8] = "O";
 			level[9] = "O";
 			level[10] = "F";
@@ -298,7 +300,9 @@ public class Maze {
 				level[robotPlacement + steps] = "R";
 			}
 			
-			System.out.println(String.join("", level));
+			if (map) {
+				System.out.println(String.join("", level));
+			}
 		}
 		
 		if (timer) {
