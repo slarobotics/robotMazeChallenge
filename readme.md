@@ -1,5 +1,3 @@
-# Warning: As of now the code is not complete and there are some strange bugs. Shocking I know.
-
 # 4454's Robot Maze Challenge
 
 ## What is this?
